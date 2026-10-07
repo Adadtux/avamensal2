@@ -36,11 +36,11 @@
       <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-4" style="background:linear-gradient(135deg,#6366f1,#a855f7);">
        <i data-lucide="brain" style="width:40px;height:40px;color:#fff;"></i>
       </div>
-      <h1 id="title-text" class="text-3xl md:text-4xl font-800 text-white mb-4">Avaliação Bimestral de Inteligência Artificial</h1>
+      <h1 id="title-text" class="text-3xl md:text-4xl font-800 text-white mb-4">Revisao para Avaliacao Mensal de Informatica</h1>
       <h1 class="text-3xl md:text-3xl font-800 text-white mb-2">Curso Técnico em Informática</h1>
       <h1 class="text-3xl md:text-2xl font-800 text-white mb-2">Prof. Nicolau Adad</h1>
-      <h1 class="text-3xl md:text-2xl font-800 text-white mb-4">Data: 07/05/2026</h1>
-      <p id="welcome-text" class="text-slate-400 text-lg">Avaliação sobre IA! Você tem 2 tentativas para obter a melhor nota.</p>
+      <h1 class="text-3xl md:text-2xl font-800 text-white mb-4">Data: 07/10/2026</h1>
+      <p id="welcome-text" class="text-slate-400 text-lg">Você tem 2 tentativas para obter a melhor nota.</p>
      </div>
      <div class="bg-slate-800/60 rounded-2xl p-6 backdrop-blur border border-slate-700/50 mb-4">
       <label for="student-name" class="block text-left text-sm font-500 text-slate-300 mb-2">Seu nome completo</label> <input id="student-name" type="text" placeholder="Digite seu nome aqui..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-600 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/30 text-lg">
@@ -146,7 +146,7 @@ const questions = [
 { q:"Durante a inicialização do computador, existe um procedimento conhecido como POST. Qual é sua finalidade?", opts:["Realizar verificações durante o processo de inicialização.","Apagar os arquivos temporários do usuário.","Aumentar automaticamente a frequência do processador.","Fazer backup dos arquivos armazenados no HD."], ans:1 }
  ];
 
-const letters = ['A','B','C','D','E'];
+const letters = ['A','B','C','D'];
 let studentName = '';
 let currentQ = 0;
 let attempt = 1;
@@ -156,8 +156,8 @@ let timerInterval = null;
 let timeRemaining = 30 * 60; // 30 minutos em segundos
 
 const defaultConfig = {
-  quiz_title: 'Quiz de Inteligência Artificial',
-  welcome_message: 'Teste seus conhecimentos sobre IA! Você tem 2 tentativas para obter a melhor nota.',
+  quiz_title: 'Revisao para Avaliacao Mensal de Informatica',
+  welcome_message: 'Você tem 2 tentativas para obter a melhor nota.',
   background_color: '#0f172a',
   surface_color: '#1e293b',
   text_color: '#f1f5f9',
