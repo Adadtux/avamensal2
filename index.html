@@ -399,7 +399,7 @@ function finishQuiz() {
 function showResult() {
   const best = Math.max(scores[0], scores[1] || 0);
   const pct = Math.round((best / questions.length) * 100);
-  const nota = (best / questions.length * 20).toFixed(1);
+  const nota = (best / questions.length * 10).toFixed(1);
 
   document.getElementById('result-name').textContent = studentName;
   document.getElementById('result-score').textContent = nota;
